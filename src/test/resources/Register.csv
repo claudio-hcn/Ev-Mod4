@@ -1,0 +1,5 @@
+firstName,lastName,email,phoneNumber,dateOfBirth,gender,state,city,currentAddress
+Juan,Perez,juan.perez@gmail.com,1234567890,15 January 1990,Male,NCR,Delhi,"Juan Perez Address\n123 Main Street\nDelhi India"
+Maria,Garcia,maria.garcia@outlook.com,9876543210,20 February 1992,Female,Uttar Pradesh,Agra,"Maria Garcia Address\n456 Oak Avenue\nAgra India"
+Carlos,Rodriguez,carlos.rodriguez@yahoo.com,5555666777,10 March 1988,Male,Haryana,Karnal,"Carlos Rodriguez Address\n789 Pine Road\nKarnal India"
+Empty,Fields,,,,,,,

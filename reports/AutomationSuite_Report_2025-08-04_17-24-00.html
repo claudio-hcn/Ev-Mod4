@@ -1,0 +1,2360 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Suite de Automatización Funcional</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css">.badge-primary { background-color: #007bff !important; } .badge-success { background-color: #28a745 !important; } .badge-danger { background-color: #dc3545 !important; } .badge-warning { background-color: #ffc107 !important; color: #212529 !important; } .card-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important; color: white !important; } .test-content { padding: 15px !important; } .step-details { margin: 10px 0 !important; }</style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Reporte de Tests Automatizados</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">04/08/2025 17:24:00</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">📝RegisterTests</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="📝RegisterTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCompleteFormSubmission - RegisterTest</p>
+            <p class="text-sm">
+              <span>17:24:03</span> / <span>00:00:17:807</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCompleteFormSubmission - RegisterTest</h5>
+<span class='badge badge-success'>08.04.2025 17:24:03</span>
+<span class='badge badge-danger'>08.04.2025 17:24:20</span>
+<span class='badge badge-default'>00:00:17:807</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">📝RegisterTests</span></div>
+<div class="m-t-10 m-l-5">Test de formulario con datos desde CSV</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-08-526.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-08-526.png">
+    <div class="title">Formulario inicial completo</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-24-17-190.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-24-17-190.png">
+    <div class="title">Estado y Ciudad seleccionados</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-24-17-361.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-24-17-361.png">
+    <div class="title">Formulario completo llenado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\modal_success_2025-08-04_17-24-20-628.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\modal_success_2025-08-04_17-24-20-628.png">
+    <div class="title">🏆 Modal de éxito detectado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-20-787.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-20-787.png">
+    <div class="title">✅ Estado final exitoso</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:03</td>
+        <td>
+          ℹ️ Iniciando ejecución del test: testCompleteFormSubmission
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:03</td>
+        <td>
+          ℹ️ Clase: suiteTest.RegisterTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:03</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Juan Perez</li><li><b>Email:</b> juan.perez@gmail.com</li><li><b>Teléfono:</b> 1234567890</li><li><b>Fecha Nacimiento:</b> 15 January 1990</li><li><b>Género:</b> Male</li><li><b>Estado:</b> NCR</li><li><b>Ciudad:</b> Delhi</li><li><b>Dirección:</b> Juan Perez Address<br/>123 Main Street<br/>Delhi India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:03</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Juan Perez</li><li><b>Email:</b> juan.perez@gmail.com</li><li><b>Teléfono:</b> 1234567890</li><li><b>Fecha Nacimiento:</b> 15 January 1990</li><li><b>Género:</b> Male</li><li><b>Estado:</b> NCR</li><li><b>Ciudad:</b> Delhi</li><li><b>Dirección:</b> Juan Perez Address<br/>123 Main Street<br/>Delhi India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:03</td>
+        <td>
+          ℹ️ Navegando a DemoQA Practice Form...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:08</td>
+        <td>
+          ✅ Página Practice Form cargada
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:08</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_start_2025-08-04_17-24-08-526.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:08</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario inicial completo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:08</td>
+        <td>
+          ℹ️ 1️⃣ Llenando información personal...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:09</td>
+        <td>
+          ✅ ✅ Nombre: Juan
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:09</td>
+        <td>
+          ✅ ✅ Apellido: Perez
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:09</td>
+        <td>
+          ✅ ✅ Email: juan.perez@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:09</td>
+        <td>
+          ℹ️ 2️⃣ Seleccionando género...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:09</td>
+        <td>
+          ✅ ✅ Género seleccionado: Male
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:09</td>
+        <td>
+          ℹ️ 3️⃣ Llenando número de teléfono...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:09</td>
+        <td>
+          ✅ ✅ Teléfono: 1234567890
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:09</td>
+        <td>
+          ℹ️ 4️⃣ Seleccionando fecha de nacimiento...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:10</td>
+        <td>
+          ✅ ✅ Mes seleccionado: January
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:10</td>
+        <td>
+          ✅ ✅ Año seleccionado: 1990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:10</td>
+        <td>
+          ✅ ✅ Día seleccionado: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:10</td>
+        <td>
+          ℹ️ 5️⃣ Llenando materias...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:11</td>
+        <td>
+          ✅ ✅ Materia agregada: Math
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:11</td>
+        <td>
+          ✅ ✅ Materia agregada: Physics
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:12</td>
+        <td>
+          ✅ ✅ Materia agregada: Chemistry
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:13</td>
+        <td>
+          ℹ️ 6️⃣ Seleccionando hobbies...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:13</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Sports
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:13</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Reading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:13</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Music
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 7️⃣ Subiendo imagen...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:14</td>
+        <td>
+          ✅ ✅ Imagen subida: test-image.txt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 8️⃣ Llenando dirección actual...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:14</td>
+        <td>
+          ✅ ✅ Dirección: Juan Perez Address 123 Main Street Ciudad, País
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 9️⃣ Seleccionando estado y ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 📊 Datos del CSV:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️    - Estado desde CSV: 'NCR'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️    - Ciudad desde CSV: 'Delhi'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 🎯 Seleccionando: Estado='NCR', Ciudad='Delhi'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:14</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Estado...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:15</td>
+        <td>
+          ℹ️ 🔍 Buscando estado con XPath: //div[contains(@class,'menu')]//div[text()='NCR']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:15</td>
+        <td>
+          ✅ ✅ Estado seleccionado: NCR
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:16</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ 🔍 Buscando ciudad con XPath: //div[contains(@class,'menu')]//div[text()='Delhi']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:17</td>
+        <td>
+          ✅ ✅ Ciudad seleccionada: Delhi
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ Screenshot capturado: state_city_selected_2025-08-04_17-24-17-190.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Estado y Ciudad seleccionados
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_filled_2025-08-04_17-24-17-361.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario completo llenado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:17</td>
+        <td>
+          ℹ️ 🔟 Enviando formulario completo...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:18</td>
+        <td>
+          ✅ ✅ Formulario enviado con click normal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:18</td>
+        <td>
+          ℹ️ 🏆 Verificando envío del formulario...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:20</td>
+        <td>
+          ✅ ✅ Modal de confirmación encontrado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:20</td>
+        <td>
+          ✅ 🎉 FORMULARIO ENVIADO EXITOSAMENTE - Modal confirmado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Screenshot capturado: modal_success_2025-08-04_17-24-20-628.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Screenshot adjuntado: 🏆 Modal de éxito detectado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Intentando cerrar modal de confirmación...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:20</td>
+        <td>
+          ✅ Modal cerrado con JavaScript click
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:20</td>
+        <td>
+          ✅ FORMULARIO COMPLETO enviado exitosamente para: Juan Perez
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:20</td>
+        <td>
+          ✅ Test completado exitosamente
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Estado: SUCCESS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Screenshot capturado: testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-20-787.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Screenshot adjuntado: ✅ Estado final exitoso
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Limpieza entre tests completada
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag="📝RegisterTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCompleteFormSubmission - RegisterTest</p>
+            <p class="text-sm">
+              <span>17:24:20</span> / <span>00:00:31:347</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCompleteFormSubmission - RegisterTest</h5>
+<span class='badge badge-success'>08.04.2025 17:24:20</span>
+<span class='badge badge-danger'>08.04.2025 17:24:52</span>
+<span class='badge badge-default'>00:00:31:347</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">📝RegisterTests</span></div>
+<div class="m-t-10 m-l-5">Test de formulario con datos desde CSV</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-21-967.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-21-967.png">
+    <div class="title">Formulario inicial completo</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-24-32-313.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-24-32-313.png">
+    <div class="title">Estado y Ciudad seleccionados</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-24-32-489.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-24-32-489.png">
+    <div class="title">Formulario completo llenado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\form_completed_2025-08-04_17-24-51-830.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\form_completed_2025-08-04_17-24-51-830.png">
+    <div class="title">📝 Estado final del formulario</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-52-083.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-52-083.png">
+    <div class="title">✅ Estado final exitoso</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Iniciando ejecución del test: testCompleteFormSubmission
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Clase: suiteTest.RegisterTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Maria Garcia</li><li><b>Email:</b> maria.garcia@outlook.com</li><li><b>Teléfono:</b> 9876543210</li><li><b>Fecha Nacimiento:</b> 20 February 1992</li><li><b>Género:</b> Female</li><li><b>Estado:</b> Uttar Pradesh</li><li><b>Ciudad:</b> Agra</li><li><b>Dirección:</b> Maria Garcia Address<br/>456 Oak Avenue<br/>Agra India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Maria Garcia</li><li><b>Email:</b> maria.garcia@outlook.com</li><li><b>Teléfono:</b> 9876543210</li><li><b>Fecha Nacimiento:</b> 20 February 1992</li><li><b>Género:</b> Female</li><li><b>Estado:</b> Uttar Pradesh</li><li><b>Ciudad:</b> Agra</li><li><b>Dirección:</b> Maria Garcia Address<br/>456 Oak Avenue<br/>Agra India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:20</td>
+        <td>
+          ℹ️ Navegando a DemoQA Practice Form...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:21</td>
+        <td>
+          ✅ Página Practice Form cargada
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:22</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_start_2025-08-04_17-24-21-967.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:22</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario inicial completo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:22</td>
+        <td>
+          ℹ️ 1️⃣ Llenando información personal...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:22</td>
+        <td>
+          ✅ ✅ Nombre: Maria
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:22</td>
+        <td>
+          ✅ ✅ Apellido: Garcia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:22</td>
+        <td>
+          ✅ ✅ Email: maria.garcia@outlook.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:22</td>
+        <td>
+          ℹ️ 2️⃣ Seleccionando género...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>17:24:23</td>
+        <td>
+          ⚠️ Error seleccionando género, usando Male como fallback
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>17:24:24</td>
+        <td>
+          ❌ No se pudo seleccionar género
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:24</td>
+        <td>
+          ℹ️ 3️⃣ Llenando número de teléfono...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:24</td>
+        <td>
+          ✅ ✅ Teléfono: 9876543210
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:24</td>
+        <td>
+          ℹ️ 4️⃣ Seleccionando fecha de nacimiento...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:25</td>
+        <td>
+          ✅ ✅ Mes seleccionado: January
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:25</td>
+        <td>
+          ✅ ✅ Año seleccionado: 1990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:25</td>
+        <td>
+          ✅ ✅ Día seleccionado: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:25</td>
+        <td>
+          ℹ️ 5️⃣ Llenando materias...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:26</td>
+        <td>
+          ✅ ✅ Materia agregada: Math
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:27</td>
+        <td>
+          ✅ ✅ Materia agregada: Physics
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:27</td>
+        <td>
+          ✅ ✅ Materia agregada: Chemistry
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:28</td>
+        <td>
+          ℹ️ 6️⃣ Seleccionando hobbies...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:28</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Sports
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:28</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Reading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:29</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Music
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️ 7️⃣ Subiendo imagen...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:29</td>
+        <td>
+          ✅ ✅ Imagen subida: test-image.txt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️ 8️⃣ Llenando dirección actual...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:29</td>
+        <td>
+          ✅ ✅ Dirección: Maria Garcia Address 123 Main Street Ciudad, País
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️ 9️⃣ Seleccionando estado y ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️ 📊 Datos del CSV:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️    - Estado desde CSV: 'Uttar Pradesh'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️    - Ciudad desde CSV: 'Agra'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:29</td>
+        <td>
+          ℹ️ 🎯 Seleccionando: Estado='Uttar Pradesh', Ciudad='Agra'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:30</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Estado...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:30</td>
+        <td>
+          ℹ️ 🔍 Buscando estado con XPath: //div[contains(@class,'menu')]//div[text()='Uttar Pradesh']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:30</td>
+        <td>
+          ✅ ✅ Estado seleccionado: Uttar Pradesh
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:31</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ 🔍 Buscando ciudad con XPath: //div[contains(@class,'menu')]//div[text()='Agra']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:32</td>
+        <td>
+          ✅ ✅ Ciudad seleccionada: Agra
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ Screenshot capturado: state_city_selected_2025-08-04_17-24-32-313.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Estado y Ciudad seleccionados
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_filled_2025-08-04_17-24-32-489.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario completo llenado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:32</td>
+        <td>
+          ℹ️ 🔟 Enviando formulario completo...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:33</td>
+        <td>
+          ✅ ✅ Formulario enviado con click normal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:33</td>
+        <td>
+          ℹ️ 🏆 Verificando envío del formulario...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:51</td>
+        <td>
+          ℹ️ Modal no apareció, verificando otras señales de éxito...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>17:24:51</td>
+        <td>
+          ⚠️ ⚠️ No se pudo confirmar el envío con modal, pero el formulario fue completado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:51</td>
+        <td>
+          ✅ ✅ FORMULARIO COMPLETADO - Envío realizado (sin confirmación visual)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Screenshot capturado: form_completed_2025-08-04_17-24-51-830.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Screenshot adjuntado: 📝 Estado final del formulario
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:52</td>
+        <td>
+          ✅ FORMULARIO COMPLETO enviado exitosamente para: Maria Garcia
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:52</td>
+        <td>
+          ✅ Test completado exitosamente
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Estado: SUCCESS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Screenshot capturado: testCompleteFormSubmission_SUCCESS_2025-08-04_17-24-52-083.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Screenshot adjuntado: ✅ Estado final exitoso
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Limpieza entre tests completada
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag="📝RegisterTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCompleteFormSubmission - RegisterTest</p>
+            <p class="text-sm">
+              <span>17:24:52</span> / <span>00:00:32:113</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCompleteFormSubmission - RegisterTest</h5>
+<span class='badge badge-success'>08.04.2025 17:24:52</span>
+<span class='badge badge-danger'>08.04.2025 17:25:24</span>
+<span class='badge badge-default'>00:00:32:113</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">📝RegisterTests</span></div>
+<div class="m-t-10 m-l-5">Test de formulario con datos desde CSV</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-54-146.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-24-54-146.png">
+    <div class="title">Formulario inicial completo</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-25-04-395.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-25-04-395.png">
+    <div class="title">Estado y Ciudad seleccionados</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-25-04-547.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-25-04-547.png">
+    <div class="title">Formulario completo llenado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\form_completed_2025-08-04_17-25-23-891.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\form_completed_2025-08-04_17-25-23-891.png">
+    <div class="title">📝 Estado final del formulario</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-24-047.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-24-047.png">
+    <div class="title">✅ Estado final exitoso</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Iniciando ejecución del test: testCompleteFormSubmission
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Clase: suiteTest.RegisterTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Carlos Rodriguez</li><li><b>Email:</b> carlos.rodriguez@yahoo.com</li><li><b>Teléfono:</b> 5555666777</li><li><b>Fecha Nacimiento:</b> 10 March 1988</li><li><b>Género:</b> Male</li><li><b>Estado:</b> Haryana</li><li><b>Ciudad:</b> Karnal</li><li><b>Dirección:</b> Carlos Rodriguez Address<br/>789 Pine Road<br/>Karnal India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Carlos Rodriguez</li><li><b>Email:</b> carlos.rodriguez@yahoo.com</li><li><b>Teléfono:</b> 5555666777</li><li><b>Fecha Nacimiento:</b> 10 March 1988</li><li><b>Género:</b> Male</li><li><b>Estado:</b> Haryana</li><li><b>Ciudad:</b> Karnal</li><li><b>Dirección:</b> Carlos Rodriguez Address<br/>789 Pine Road<br/>Karnal India</li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:52</td>
+        <td>
+          ℹ️ Navegando a DemoQA Practice Form...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:54</td>
+        <td>
+          ✅ Página Practice Form cargada
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:54</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_start_2025-08-04_17-24-54-146.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:54</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario inicial completo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:54</td>
+        <td>
+          ℹ️ 1️⃣ Llenando información personal...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:54</td>
+        <td>
+          ✅ ✅ Nombre: Carlos
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:54</td>
+        <td>
+          ✅ ✅ Apellido: Rodriguez
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:54</td>
+        <td>
+          ✅ ✅ Email: carlos.rodriguez@yahoo.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:54</td>
+        <td>
+          ℹ️ 2️⃣ Seleccionando género...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>17:24:55</td>
+        <td>
+          ⚠️ Error seleccionando género, usando Male como fallback
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>17:24:56</td>
+        <td>
+          ❌ No se pudo seleccionar género
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:56</td>
+        <td>
+          ℹ️ 3️⃣ Llenando número de teléfono...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:57</td>
+        <td>
+          ✅ ✅ Teléfono: 5555666777
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:57</td>
+        <td>
+          ℹ️ 4️⃣ Seleccionando fecha de nacimiento...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:57</td>
+        <td>
+          ✅ ✅ Mes seleccionado: January
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:57</td>
+        <td>
+          ✅ ✅ Año seleccionado: 1990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:57</td>
+        <td>
+          ✅ ✅ Día seleccionado: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:24:57</td>
+        <td>
+          ℹ️ 5️⃣ Llenando materias...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:58</td>
+        <td>
+          ✅ ✅ Materia agregada: Math
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:24:59</td>
+        <td>
+          ✅ ✅ Materia agregada: Physics
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:00</td>
+        <td>
+          ✅ ✅ Materia agregada: Chemistry
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:00</td>
+        <td>
+          ℹ️ 6️⃣ Seleccionando hobbies...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:00</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Sports
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:00</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Reading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:01</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Music
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️ 7️⃣ Subiendo imagen...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:01</td>
+        <td>
+          ✅ ✅ Imagen subida: test-image.txt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️ 8️⃣ Llenando dirección actual...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:01</td>
+        <td>
+          ✅ ✅ Dirección: Carlos Rodriguez Address 123 Main Street Ciudad, País
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️ 9️⃣ Seleccionando estado y ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️ 📊 Datos del CSV:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️    - Estado desde CSV: 'Haryana'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️    - Ciudad desde CSV: 'Karnal'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:01</td>
+        <td>
+          ℹ️ 🎯 Seleccionando: Estado='Haryana', Ciudad='Karnal'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:02</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Estado...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:02</td>
+        <td>
+          ℹ️ 🔍 Buscando estado con XPath: //div[contains(@class,'menu')]//div[text()='Haryana']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:02</td>
+        <td>
+          ✅ ✅ Estado seleccionado: Haryana
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:03</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ 🔍 Buscando ciudad con XPath: //div[contains(@class,'menu')]//div[text()='Karnal']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:04</td>
+        <td>
+          ✅ ✅ Ciudad seleccionada: Karnal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ Screenshot capturado: state_city_selected_2025-08-04_17-25-04-395.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Estado y Ciudad seleccionados
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_filled_2025-08-04_17-25-04-547.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario completo llenado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:04</td>
+        <td>
+          ℹ️ 🔟 Enviando formulario completo...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:05</td>
+        <td>
+          ✅ ✅ Formulario enviado con click normal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:05</td>
+        <td>
+          ℹ️ 🏆 Verificando envío del formulario...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:23</td>
+        <td>
+          ℹ️ Modal no apareció, verificando otras señales de éxito...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>17:25:23</td>
+        <td>
+          ⚠️ ⚠️ No se pudo confirmar el envío con modal, pero el formulario fue completado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:23</td>
+        <td>
+          ✅ ✅ FORMULARIO COMPLETADO - Envío realizado (sin confirmación visual)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Screenshot capturado: form_completed_2025-08-04_17-25-23-891.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Screenshot adjuntado: 📝 Estado final del formulario
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:24</td>
+        <td>
+          ✅ FORMULARIO COMPLETO enviado exitosamente para: Carlos Rodriguez
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:24</td>
+        <td>
+          ✅ Test completado exitosamente
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Estado: SUCCESS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Screenshot capturado: testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-24-047.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Screenshot adjuntado: ✅ Estado final exitoso
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Limpieza entre tests completada
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="📝RegisterTests"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCompleteFormSubmission - RegisterTest</p>
+            <p class="text-sm">
+              <span>17:25:24</span> / <span>00:00:12:947</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCompleteFormSubmission - RegisterTest</h5>
+<span class='badge badge-success'>08.04.2025 17:25:24</span>
+<span class='badge badge-danger'>08.04.2025 17:25:37</span>
+<span class='badge badge-default'>00:00:12:947</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">📝RegisterTests</span></div>
+<div class="m-t-10 m-l-5">Test de formulario con datos desde CSV</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-25-25-258.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_start_2025-08-04_17-25-25-258.png">
+    <div class="title">Formulario inicial completo</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-25-33-394.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\state_city_selected_2025-08-04_17-25-33-394.png">
+    <div class="title">Estado y Ciudad seleccionados</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-25-33-521.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\complete_form_filled_2025-08-04_17-25-33-521.png">
+    <div class="title">Formulario completo llenado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\modal_success_2025-08-04_17-25-36-765.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\modal_success_2025-08-04_17-25-36-765.png">
+    <div class="title">🏆 Modal de éxito detectado</div>
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-36-912.png' src="C:\Users\claud\Desktop\Bootcamp-QA\Ev-Mod4\screenshots\testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-36-912.png">
+    <div class="title">✅ Estado final exitoso</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Iniciando ejecución del test: testCompleteFormSubmission
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Clase: suiteTest.RegisterTest
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Empty Fields</li><li><b>Email:</b> </li><li><b>Teléfono:</b> </li><li><b>Fecha Nacimiento:</b> </li><li><b>Género:</b> Male</li><li><b>Estado:</b> NCR</li><li><b>Ciudad:</b> Delhi</li><li><b>Dirección:</b> </li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          <div style='background-color: #f8f9fa; padding: 10px; border-radius: 5px;'><h5>📊 Datos del Test de Registro DemoQA:</h5><ul><li><b>Nombre Completo:</b> Empty Fields</li><li><b>Email:</b> </li><li><b>Teléfono:</b> </li><li><b>Fecha Nacimiento:</b> </li><li><b>Género:</b> Male</li><li><b>Estado:</b> NCR</li><li><b>Ciudad:</b> Delhi</li><li><b>Dirección:</b> </li></ul></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:24</td>
+        <td>
+          ℹ️ Navegando a DemoQA Practice Form...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ Página Practice Form cargada
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_start_2025-08-04_17-25-25-258.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario inicial completo
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ 1️⃣ Llenando información personal...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ ✅ Nombre: Empty
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ ✅ Apellido: Fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ ✅ Email: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ 2️⃣ Seleccionando género...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ ✅ Género seleccionado: Male
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ 3️⃣ Llenando número de teléfono...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:25</td>
+        <td>
+          ✅ ✅ Teléfono: 1234567890
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:25</td>
+        <td>
+          ℹ️ 4️⃣ Seleccionando fecha de nacimiento...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:26</td>
+        <td>
+          ✅ ✅ Mes seleccionado: January
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:26</td>
+        <td>
+          ✅ ✅ Año seleccionado: 1990
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:26</td>
+        <td>
+          ✅ ✅ Día seleccionado: 15
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:26</td>
+        <td>
+          ℹ️ 5️⃣ Llenando materias...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:27</td>
+        <td>
+          ✅ ✅ Materia agregada: Math
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:28</td>
+        <td>
+          ✅ ✅ Materia agregada: Physics
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:29</td>
+        <td>
+          ✅ ✅ Materia agregada: Chemistry
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:29</td>
+        <td>
+          ℹ️ 6️⃣ Seleccionando hobbies...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:29</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Sports
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:29</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Reading
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:30</td>
+        <td>
+          ✅ ✅ Hobby seleccionado: Music
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️ 7️⃣ Subiendo imagen...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:30</td>
+        <td>
+          ✅ ✅ Imagen subida: test-image.txt
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️ 8️⃣ Llenando dirección actual...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:30</td>
+        <td>
+          ✅ ✅ Dirección: Empty Fields Address 123 Main Street Ciudad, País
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️ 9️⃣ Seleccionando estado y ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️ 📊 Datos del CSV:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️    - Estado desde CSV: 'NCR'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️    - Ciudad desde CSV: 'Delhi'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:30</td>
+        <td>
+          ℹ️ 🎯 Seleccionando: Estado='NCR', Ciudad='Delhi'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:31</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Estado...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:31</td>
+        <td>
+          ℹ️ 🔍 Buscando estado con XPath: //div[contains(@class,'menu')]//div[text()='NCR']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:31</td>
+        <td>
+          ✅ ✅ Estado seleccionado: NCR
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:32</td>
+        <td>
+          ℹ️ 🔽 Abriendo dropdown de Ciudad...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ 🔍 Buscando ciudad con XPath: //div[contains(@class,'menu')]//div[text()='Delhi']
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:33</td>
+        <td>
+          ✅ ✅ Ciudad seleccionada: Delhi
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ Screenshot capturado: state_city_selected_2025-08-04_17-25-33-394.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Estado y Ciudad seleccionados
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ Screenshot capturado: complete_form_filled_2025-08-04_17-25-33-521.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ Screenshot adjuntado: Formulario completo llenado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:33</td>
+        <td>
+          ℹ️ 🔟 Enviando formulario completo...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:34</td>
+        <td>
+          ✅ ✅ Formulario enviado con click normal
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:34</td>
+        <td>
+          ℹ️ 🏆 Verificando envío del formulario...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:36</td>
+        <td>
+          ✅ ✅ Modal de confirmación encontrado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:36</td>
+        <td>
+          ✅ 🎉 FORMULARIO ENVIADO EXITOSAMENTE - Modal confirmado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:36</td>
+        <td>
+          ℹ️ Screenshot capturado: modal_success_2025-08-04_17-25-36-765.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:36</td>
+        <td>
+          ℹ️ Screenshot adjuntado: 🏆 Modal de éxito detectado
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:36</td>
+        <td>
+          ℹ️ Intentando cerrar modal de confirmación...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:36</td>
+        <td>
+          ✅ Modal cerrado con JavaScript click
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:36</td>
+        <td>
+          ✅ FORMULARIO COMPLETO enviado exitosamente para: Empty Fields
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:36</td>
+        <td>
+          ✅ Test completado exitosamente
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:36</td>
+        <td>
+          ℹ️ Estado: SUCCESS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Screenshot capturado: testCompleteFormSubmission_SUCCESS_2025-08-04_17-25-36-912.png
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Screenshot adjuntado: ✅ Estado final exitoso
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Limpieza entre tests completada
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Finalizando RegisterTest COMPLETO...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>17:25:37</td>
+        <td>
+          ✅ Test de formulario completo finalizado exitosamente
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ === RESUMEN FINAL DE LA SUITE ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Total de tests ejecutados: 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Tests exitosos: 4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Tests fallidos: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Tests omitidos: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>17:25:37</td>
+        <td>
+          ℹ️ Tasa de éxito: 100,0%
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">📝RegisterTests</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>📝RegisterTests</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:24:03 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>testCompleteFormSubmission - RegisterTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:24:20 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testCompleteFormSubmission - RegisterTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:24:52 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testCompleteFormSubmission - RegisterTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:24 p. m.</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testCompleteFormSubmission - RegisterTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>04/08/2025 17:24:00</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>04/08/2025 17:25:37</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>2</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='37%'><b>95</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>2</b> events failed,
+<b data-tooltip='%'>159</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testCompleteFormSubmission - RegisterTest":17.807,"testCompleteFormSubmission - RegisterTest":31.347,"testCompleteFormSubmission - RegisterTest":32.113,"testCompleteFormSubmission - RegisterTest":12.947
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>📝RegisterTests</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>🖥️ Sistema Operativo</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>☕ Versión Java</td>
+<td>17.0.15</td>
+</tr>
+<tr>
+<td>👤 Usuario</td>
+<td>claud</td>
+</tr>
+<tr>
+<td>🌍 Zona Horaria</td>
+<td>America/Santiago</td>
+</tr>
+<tr>
+<td>🔧 Entorno</td>
+<td>QA Testing</td>
+</tr>
+<tr>
+<td>🌐 Navegador</td>
+<td>Chrome WebDriver</td>
+</tr>
+<tr>
+<td>📅 Fecha Ejecución</td>
+<td>04/08/2025 17:24:00</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 95,
+failEvents: 2,
+warningEvents: 4,
+skipEvents: 0,
+infoEvents: 155
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript">document.querySelector('.brand-logo').innerHTML = '🚀 Suite Automatización';</script></body>
+</html>

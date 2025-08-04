@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-04T17:25:56 CLT" name="Cross-Browser-Suite-Optimized" finished-at="2025-08-04T17:29:44 CLT" duration-ms="228838">
+    <groups>
+    </groups>
+    <test started-at="2025-08-04T17:25:56 CLT" name="Chrome-LoginTests-Complete" finished-at="2025-08-04T17:26:10 CLT" duration-ms="14329">
+      <class name="suiteTest.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:25:56 CLT" name="setUp" finished-at="2025-08-04T17:25:57 CLT" duration-ms="1555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:25:57 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:26:03 CLT" duration-ms="5694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='student', password='***', expectedResult='success', description='Login válido con credenciales correctas'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:03 CLT" name="afterMethodFast" finished-at="2025-08-04T17:26:03 CLT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:03 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:26:06 CLT" duration-ms="2557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='incorrectUser', password='***', expectedResult='failed', description='Usuario inexistente'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:06 CLT" name="afterMethodFast" finished-at="2025-08-04T17:26:06 CLT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:06 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:26:08 CLT" duration-ms="2512" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='student', password='***', expectedResult='failed', description='Contraseña incorrecta'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:08 CLT" name="afterMethodFast" finished-at="2025-08-04T17:26:08 CLT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testEmptyLoginFast()[pri:2, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:08 CLT" name="testEmptyLoginFast" finished-at="2025-08-04T17:26:09 CLT" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyLoginFast -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:09 CLT" name="afterMethodFast" finished-at="2025-08-04T17:26:09 CLT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testInvalidCredentialsFast()[pri:3, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:09 CLT" name="testInvalidCredentialsFast" finished-at="2025-08-04T17:26:10 CLT" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidCredentialsFast -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:10 CLT" name="afterMethodFast" finished-at="2025-08-04T17:26:10 CLT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:suiteTest.LoginTest@2e005c4b]" started-at="2025-08-04T17:26:10 CLT" name="tearDown" finished-at="2025-08-04T17:26:10 CLT" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- suiteTest.LoginTest -->
+    </test> <!-- Chrome-LoginTests-Complete -->
+    <test started-at="2025-08-04T17:26:10 CLT" name="Chrome-RegisterTests-Complete" finished-at="2025-08-04T17:28:25 CLT" duration-ms="135093">
+      <class name="suiteTest.RegisterTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:26:10 CLT" name="setUp" finished-at="2025-08-04T17:26:11 CLT" duration-ms="806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:26:11 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:26:47 CLT" duration-ms="35861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Juan', lastName='Perez', email='juan.perez@gmail.com', phoneNumber='1234567890', dateOfBirth='15 January 1990', gender='Male', state='NCR', city='Delhi', currentAddress='Juan Perez Address
+123 Main Street
+Delhi India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:26:47 CLT" name="afterMethod" finished-at="2025-08-04T17:26:47 CLT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:26:47 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:27:18 CLT" duration-ms="31116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Maria', lastName='Garcia', email='maria.garcia@outlook.com', phoneNumber='9876543210', dateOfBirth='20 February 1992', gender='Female', state='Uttar Pradesh', city='Agra', currentAddress='Maria Garcia Address
+456 Oak Avenue
+Agra India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:27:18 CLT" name="afterMethod" finished-at="2025-08-04T17:27:18 CLT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:27:18 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:27:51 CLT" duration-ms="33060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Carlos', lastName='Rodriguez', email='carlos.rodriguez@yahoo.com', phoneNumber='5555666777', dateOfBirth='10 March 1988', gender='Male', state='Haryana', city='Karnal', currentAddress='Carlos Rodriguez Address
+789 Pine Road
+Karnal India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:27:52 CLT" name="afterMethod" finished-at="2025-08-04T17:27:52 CLT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:27:52 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:28:23 CLT" duration-ms="31016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Empty', lastName='Fields', email='', phoneNumber='', dateOfBirth='', gender='', state='', city='', currentAddress=''}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:28:23 CLT" name="afterMethod" finished-at="2025-08-04T17:28:23 CLT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testFormFieldsValidation()[pri:2, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:28:23 CLT" name="testFormFieldsValidation" finished-at="2025-08-04T17:28:25 CLT" duration-ms="1777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormFieldsValidation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:28:25 CLT" name="afterMethod" finished-at="2025-08-04T17:28:25 CLT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:suiteTest.RegisterTest@5b8dfcc1]" started-at="2025-08-04T17:28:25 CLT" name="tearDown" finished-at="2025-08-04T17:28:25 CLT" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- suiteTest.RegisterTest -->
+    </test> <!-- Chrome-RegisterTests-Complete -->
+    <test started-at="2025-08-04T17:28:25 CLT" name="Firefox-LoginTest-Essential" finished-at="2025-08-04T17:28:41 CLT" duration-ms="15329">
+      <class name="suiteTest.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:25 CLT" name="setUp" finished-at="2025-08-04T17:28:29 CLT" duration-ms="3316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:29 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:28:35 CLT" duration-ms="6150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='student', password='***', expectedResult='success', description='Login válido con credenciales correctas'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:35 CLT" name="afterMethodFast" finished-at="2025-08-04T17:28:35 CLT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:35 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:28:37 CLT" duration-ms="2478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='incorrectUser', password='***', expectedResult='failed', description='Usuario inexistente'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:37 CLT" name="afterMethodFast" finished-at="2025-08-04T17:28:37 CLT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method signature="testLogin(utils.UserData)[pri:1, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:37 CLT" name="testLogin" data-provider="loginData" finished-at="2025-08-04T17:28:40 CLT" duration-ms="2486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserData{username='student', password='***', expectedResult='failed', description='Contraseña incorrecta'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="afterMethodFast()[pri:0, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:40 CLT" name="afterMethodFast" finished-at="2025-08-04T17:28:40 CLT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodFast -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:suiteTest.LoginTest@747ddf94]" started-at="2025-08-04T17:28:40 CLT" name="tearDown" finished-at="2025-08-04T17:28:41 CLT" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- suiteTest.LoginTest -->
+    </test> <!-- Firefox-LoginTest-Essential -->
+    <test started-at="2025-08-04T17:28:41 CLT" name="Firefox-RegisterTest-Essential" finished-at="2025-08-04T17:29:44 CLT" duration-ms="63706">
+      <class name="suiteTest.RegisterTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:28:41 CLT" name="setUp" finished-at="2025-08-04T17:28:43 CLT" duration-ms="2732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:28:43 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:29:07 CLT" duration-ms="23202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Juan', lastName='Perez', email='juan.perez@gmail.com', phoneNumber='1234567890', dateOfBirth='15 January 1990', gender='Male', state='NCR', city='Delhi', currentAddress='Juan Perez Address
+123 Main Street
+Delhi India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:07 CLT" name="afterMethod" finished-at="2025-08-04T17:29:07 CLT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:07 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:29:19 CLT" duration-ms="12766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Maria', lastName='Garcia', email='maria.garcia@outlook.com', phoneNumber='9876543210', dateOfBirth='20 February 1992', gender='Female', state='Uttar Pradesh', city='Agra', currentAddress='Maria Garcia Address
+456 Oak Avenue
+Agra India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:20 CLT" name="afterMethod" finished-at="2025-08-04T17:29:20 CLT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:20 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:29:31 CLT" duration-ms="11201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Carlos', lastName='Rodriguez', email='carlos.rodriguez@yahoo.com', phoneNumber='5555666777', dateOfBirth='10 March 1988', gender='Male', state='Haryana', city='Karnal', currentAddress='Carlos Rodriguez Address
+789 Pine Road
+Karnal India'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:31 CLT" name="afterMethod" finished-at="2025-08-04T17:29:31 CLT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testCompleteFormSubmission(utils.RegisterData)[pri:1, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:31 CLT" name="testCompleteFormSubmission" data-provider="registerData" finished-at="2025-08-04T17:29:44 CLT" duration-ms="12706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RegisterData{firstName='Empty', lastName='Fields', email='', phoneNumber='', dateOfBirth='', gender='', state='', city='', currentAddress=''}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompleteFormSubmission -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:44 CLT" name="afterMethod" finished-at="2025-08-04T17:29:44 CLT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:suiteTest.RegisterTest@7d8995e]" started-at="2025-08-04T17:29:44 CLT" name="tearDown" finished-at="2025-08-04T17:29:44 CLT" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- suiteTest.RegisterTest -->
+    </test> <!-- Firefox-RegisterTest-Essential -->
+  </suite> <!-- Cross-Browser-Suite-Optimized -->
+</testng-results>

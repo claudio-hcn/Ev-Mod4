@@ -1,0 +1,7 @@
+suiteTest\LoginTest.class
+utils\RegisterData.class
+suiteTest\RegisterTest.class
+utils\CSVUtils.class
+utils\ExtentReportManager.class
+utils\SuiteTestListener.class
+utils\UserData.class

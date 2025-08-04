@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cross-Browser-Suite-Optimized" verbose="2" parallel="false" thread-count="1">
+    
+    <!-- Configuración global del suite -->
+    <parameter name="environment" value="qa"/>
+    <parameter name="timeout" value="15"/>
+    
+    <!-- Listeners globales -->
+    <listeners>
+        <listener class-name="utils.SuiteTestListener"/>
+    </listeners>
+    
+    <!-- ========== CHROME: TESTS COMPLETOS ========== -->
+    
+    <!-- Login completo en Chrome -->
+    <test name="Chrome-LoginTests-Complete" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testType" value="login"/>
+        <classes>
+            <class name="suiteTest.LoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testEmptyLoginFast"/>
+                    <include name="testInvalidCredentialsFast"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <!-- Register completo en Chrome -->
+    <test name="Chrome-RegisterTests-Complete" preserve-order="true">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testType" value="register"/>
+        <classes>
+            <class name="suiteTest.RegisterTest">
+                <methods>
+                    <include name="testCompleteFormSubmission"/>
+                    <include name="testFormFieldsValidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <!-- ========== FIREFOX: SOLO TESTS ESENCIALES ========== -->
+    
+    <!-- Solo el test principal de Login en Firefox -->
+    <test name="Firefox-LoginTest-Essential" preserve-order="true">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="testType" value="login"/>
+        <classes>
+            <class name="suiteTest.LoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <!-- Solo el test principal de Register en Firefox -->
+    <test name="Firefox-RegisterTest-Essential" preserve-order="true">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="testType" value="register"/>
+        <classes>
+            <class name="suiteTest.RegisterTest">
+                <methods>
+                    <include name="testCompleteFormSubmission"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

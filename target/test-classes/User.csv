@@ -1,0 +1,4 @@
+username,password,expectedResult,description
+student,Password123,success,Login válido con credenciales correctas
+incorrectUser,Password123,failed,Usuario inexistente
+student,incorrectPassword,failed,Contraseña incorrecta
