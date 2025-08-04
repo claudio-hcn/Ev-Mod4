@@ -41,24 +41,24 @@ Asegúrate de tener Java y Maven instalados.
 
 Ejecución de pruebas:
 
-# TODAS LAS PRUEBAS
+TODAS LAS PRUEBAS
 mvn test
 
-# Solo LoginTest (todos los métodos)
+Solo LoginTest (todos los métodos)
 mvn test -Dtest=LoginTest
 
-# Solo LoginTest en Chrome o FireFox
+Solo LoginTest en Chrome o FireFox
 mvn test -Dtest=LoginTest -Dbrowser=chrome
 mvn test -Dtest=LoginTest -Dbrowser=firefox
 
 
-# Solo RegisterTest (todos los métodos)
+Solo RegisterTest (todos los métodos)
 mvn test -Dtest=RegisterTest
 
-# Solo RegisterTest en Chrome o Firefox
+Solo RegisterTest en Chrome o Firefox
 mvn test -Dtest=RegisterTest -Dbrowser=chrome
 mvn test -Dtest=RegisterTest -Dbrowser=firefox
-
+---
 
 
 Los reportes se generarán automáticamente en la carpeta reports.
