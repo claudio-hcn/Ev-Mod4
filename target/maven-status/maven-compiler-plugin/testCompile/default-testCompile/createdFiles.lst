@@ -1,3 +1,4 @@
+utils\BrowserManager.class
 suiteTest\LoginTest.class
 utils\RegisterData.class
 suiteTest\RegisterTest.class
